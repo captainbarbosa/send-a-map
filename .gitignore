@@ -1,0 +1,6 @@
+mapbox_access_token
+
+xcuserdata
+DerivedData/
+Pods
+*.xcworkspace
