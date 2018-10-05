@@ -2,5 +2,6 @@ mapbox_access_token
 
 xcuserdata
 DerivedData/
+Build/
 Pods
 *.xcworkspace
