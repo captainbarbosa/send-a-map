@@ -1,3 +1,5 @@
+// This is just a test
+
 #import "ViewController.h"
 #import <Mapbox/Mapbox.h>
 
@@ -28,7 +30,7 @@
     
 }
 
-- (void)configureMapView {    
+- (void)configureMapView {
     // create a map view
     self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleURL:MGLStyle.streetsStyleURL];
     
@@ -41,14 +43,14 @@
     [self.view addSubview:self.mapView];
     self.mapView.delegate = self;
     
-//    UIView *greyMask = [[UIView alloc] initWithFrame:self.view.bounds];
-//    greyMask.backgroundColor  =[UIColor colorWithRed:0.961 green:0.957 blue:0.961 alpha:0.4];
-//    [self.view addSubview:greyMask];
+    //    UIView *greyMask = [[UIView alloc] initWithFrame:self.view.bounds];
+    //    greyMask.backgroundColor  =[UIColor colorWithRed:0.961 green:0.957 blue:0.961 alpha:0.4];
+    //    [self.view addSubview:greyMask];
     
-    UIView *overlayView = [[UIView alloc] initWithFrame:CGRectMake(self.mapView.center.x - 150, self.mapView.center.y - 150, 300, 300)];
-    
-    overlayView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.4];
-    self.mapView.maskView = overlayView;
+    //    UIView *overlayView = [[UIView alloc] initWithFrame:CGRectMake(self.mapView.center.x - 150, self.mapView.center.y - 150, 300, 300)];
+    //
+    //    overlayView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.4];
+    //    self.mapView.maskView = overlayView;
 }
 
 -(void)toggleUserLocation:(UIBarButtonItem *)button {
@@ -64,42 +66,42 @@
     }
 }
 
- - (void)didTapButton:(UIBarButtonItem *)button {
-
-     button.enabled = NO;
-     
-     // DIsplay loading indicator while beginning snapshot process
-     UIApplication.sharedApplication.networkActivityIndicatorVisible = YES;
-     
-     // Create snapshot options with current camera/zoom/bounds
-     MGLMapSnapshotOptions *options = [[MGLMapSnapshotOptions alloc] initWithStyleURL:self.mapView.styleURL camera:self.mapView.camera size:CGSizeMake(512, 512)];
-     options.zoomLevel = self.mapView.zoomLevel;
-     options.coordinateBounds = self.mapView.visibleCoordinateBounds;
-     
-
-     self.snapshotter = [[MGLMapSnapshotter alloc] initWithOptions:options];
-     
-     // Start the snapshot process
-     [self.snapshotter startWithCompletionHandler:^(MGLMapSnapshot * _Nullable snapshot, NSError * _Nullable error) {
-         // If an error occurs, display an alert
-         if (error != nil) {
-             UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                                 message:@"Could not generate image"
-                                                                          preferredStyle:UIAlertControllerStyleAlert];
-             UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-             [errorAlert addAction:defaultAction];
-             [self presentViewController:errorAlert animated:YES completion:nil];
-         }
-
-         // Re-enable the snapshot button if successful
-         UIApplication.sharedApplication.networkActivityIndicatorVisible = NO;
-
-         // Stop the loading indicator
-         button.enabled = YES;
-         
-         [self snapshotterDidCompleteWithImage:snapshot.image];
-     }];
- }
+- (void)didTapButton:(UIBarButtonItem *)button {
+    
+    button.enabled = NO;
+    
+    // DIsplay loading indicator while beginning snapshot process
+    UIApplication.sharedApplication.networkActivityIndicatorVisible = YES;
+    
+    // Create snapshot options with current camera/zoom/bounds
+    MGLMapSnapshotOptions *options = [[MGLMapSnapshotOptions alloc] initWithStyleURL:self.mapView.styleURL camera:self.mapView.camera size:CGSizeMake(512, 512)];
+    options.zoomLevel = self.mapView.zoomLevel;
+    options.coordinateBounds = self.mapView.visibleCoordinateBounds;
+    
+    
+    self.snapshotter = [[MGLMapSnapshotter alloc] initWithOptions:options];
+    
+    // Start the snapshot process
+    [self.snapshotter startWithCompletionHandler:^(MGLMapSnapshot * _Nullable snapshot, NSError * _Nullable error) {
+        // If an error occurs, display an alert
+        if (error != nil) {
+            UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                                message:@"Could not generate image"
+                                                                         preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [errorAlert addAction:defaultAction];
+            [self presentViewController:errorAlert animated:YES completion:nil];
+        }
+        
+        // Re-enable the snapshot button if successful
+        UIApplication.sharedApplication.networkActivityIndicatorVisible = NO;
+        
+        // Stop the loading indicator
+        button.enabled = YES;
+        
+        [self snapshotterDidCompleteWithImage:snapshot.image];
+    }];
+}
 
 - (void)snapshotterDidCompleteWithImage:(UIImage *)image {
     // Let go of the snapshotter to prevent memory usage
@@ -110,6 +112,7 @@
     activityViewController.popoverPresentationController.sourceView = self.view;
     [self presentViewController:activityViewController animated:true completion:nil];
 }
-     
+
 @end
+
 
