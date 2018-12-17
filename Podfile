@@ -3,10 +3,11 @@
 
 target 'send-a-map' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+  use_frameworks!
 
   # Pods for send-a-map
   pod 'Mapbox-iOS-SDK'
+  pod 'MapboxStatic.swift', '~> 0.10'
 
   target 'send-a-mapTests' do
     inherit! :search_paths

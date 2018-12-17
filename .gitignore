@@ -4,4 +4,7 @@ xcuserdata
 DerivedData/
 Build/
 Pods
+fastlane/
+Gemfile
+Gemfile.lock
 *.xcworkspace

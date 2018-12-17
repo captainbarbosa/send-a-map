@@ -15,11 +15,11 @@
 		079F420720E43727007EEB5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F420620E43727007EEB5E /* main.m */; };
 		079F421120E43727007EEB5E /* location_shareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421020E43727007EEB5E /* location_shareTests.m */; };
 		079F421C20E43727007EEB5E /* location_shareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421B20E43727007EEB5E /* location_shareUITests.m */; };
-		1442CF2CECEB314BD40B1221 /* libPods-send-a-mapUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F25895ACF583D7B7D88FD23E /* libPods-send-a-mapUITests.a */; };
 		1C427A5A72E70C368E8FD131 /* libPods-location-shareUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B29B335E2AB1BB6252CAF31D /* libPods-location-shareUITests.a */; };
-		2C8A66481468B1F038DAF64D /* libPods-send-a-mapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 340030462F6A513851B2D208 /* libPods-send-a-mapTests.a */; };
+		282D9CC2FE42C419903A30EB /* Pods_send_a_map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCA21398E6B5CF15B88B674 /* Pods_send_a_map.framework */; };
+		877C3A35D61E7C4393AC4378 /* Pods_send_a_mapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC73F895B1DA5E9756DF7304 /* Pods_send_a_mapTests.framework */; };
 		C9539D9545B942AC45CDE31B /* libPods-location-shareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCC4FD241816227A4C28F30 /* libPods-location-shareTests.a */; };
-		DCF07278178B8AF2ECC3E79A /* libPods-send-a-map.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ACC0DDD28D839C38419722 /* libPods-send-a-map.a */; };
+		E65079F648C3435AA9222D8F /* Pods_send_a_mapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF2FEFC4301D8A4CEF7D2F /* Pods_send_a_mapUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,21 +59,21 @@
 		079F421D20E43727007EEB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B0D6B517D990EDA50576B97 /* libPods-location-share.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-location-share.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCC4FD241816227A4C28F30 /* libPods-location-shareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-location-shareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		340030462F6A513851B2D208 /* libPods-send-a-mapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-send-a-mapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		496C0B37F3806A9494033B20 /* Pods-location-shareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-shareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-location-shareTests/Pods-location-shareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D691BF5965EA1A19F77A971 /* Pods-send-a-mapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-mapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-mapTests/Pods-send-a-mapTests.release.xcconfig"; sourceTree = "<group>"; };
 		5EEE4F442E587E7A8AE969C9 /* Pods-location-shareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-shareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-location-shareUITests/Pods-location-shareUITests.release.xcconfig"; sourceTree = "<group>"; };
 		66F5B2A9DF6F061B7FBFF67A /* Pods-send-a-map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-map.release.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-map/Pods-send-a-map.release.xcconfig"; sourceTree = "<group>"; };
 		6A0F1F9C086A9FD359606057 /* Pods-send-a-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-map/Pods-send-a-map.debug.xcconfig"; sourceTree = "<group>"; };
 		7108809F742A16BED2E170F8 /* Pods-location-shareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-shareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-location-shareUITests/Pods-location-shareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BCA21398E6B5CF15B88B674 /* Pods_send_a_map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_send_a_map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED87CD0881669903B4B9379 /* Pods-location-share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-share.debug.xcconfig"; path = "Pods/Target Support Files/Pods-location-share/Pods-location-share.debug.xcconfig"; sourceTree = "<group>"; };
 		9C180EA7AD5079782E12C7B4 /* Pods-location-share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-share.release.xcconfig"; path = "Pods/Target Support Files/Pods-location-share/Pods-location-share.release.xcconfig"; sourceTree = "<group>"; };
 		9C4F053421E369FCFECDC3A7 /* Pods-send-a-mapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-mapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-mapUITests/Pods-send-a-mapUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A1ACC0DDD28D839C38419722 /* libPods-send-a-map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-send-a-map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEAF2FEFC4301D8A4CEF7D2F /* Pods_send_a_mapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_send_a_mapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29B335E2AB1BB6252CAF31D /* libPods-location-shareUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-location-shareUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC73F895B1DA5E9756DF7304 /* Pods_send_a_mapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_send_a_mapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28E1541370DA4481AC07B5E /* Pods-send-a-mapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-mapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-mapTests/Pods-send-a-mapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB77037BA5372FCA3F162F15 /* Pods-location-shareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-shareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-location-shareTests/Pods-location-shareTests.release.xcconfig"; sourceTree = "<group>"; };
-		F25895ACF583D7B7D88FD23E /* libPods-send-a-mapUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-send-a-mapUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF07278178B8AF2ECC3E79A /* libPods-send-a-map.a in Frameworks */,
+				282D9CC2FE42C419903A30EB /* Pods_send_a_map.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9539D9545B942AC45CDE31B /* libPods-location-shareTests.a in Frameworks */,
-				2C8A66481468B1F038DAF64D /* libPods-send-a-mapTests.a in Frameworks */,
+				877C3A35D61E7C4393AC4378 /* Pods_send_a_mapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C427A5A72E70C368E8FD131 /* libPods-location-shareUITests.a in Frameworks */,
-				1442CF2CECEB314BD40B1221 /* libPods-send-a-mapUITests.a in Frameworks */,
+				E65079F648C3435AA9222D8F /* Pods_send_a_mapUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,9 +168,9 @@
 				0B0D6B517D990EDA50576B97 /* libPods-location-share.a */,
 				1DCC4FD241816227A4C28F30 /* libPods-location-shareTests.a */,
 				B29B335E2AB1BB6252CAF31D /* libPods-location-shareUITests.a */,
-				A1ACC0DDD28D839C38419722 /* libPods-send-a-map.a */,
-				340030462F6A513851B2D208 /* libPods-send-a-mapTests.a */,
-				F25895ACF583D7B7D88FD23E /* libPods-send-a-mapUITests.a */,
+				7BCA21398E6B5CF15B88B674 /* Pods_send_a_map.framework */,
+				BC73F895B1DA5E9756DF7304 /* Pods_send_a_mapTests.framework */,
+				AEAF2FEFC4301D8A4CEF7D2F /* Pods_send_a_mapUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "token_file=$SRCROOT/mapbox_access_token\ntoken=\"$(cat $token_file)\"\nif [ \"$token\" ]; then\nplutil -replace MGLMapboxAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nelse\necho 'error: Missing Mapbox access token'\nopen 'https://www.mapbox.com/studio/account/tokens/'\necho \"error: Get an access token from <https://www.mapbox.com/studio/account/tokens/>, then create a new file at $token_file that contains the access token.\"\nexit 1\nfi";
+			shellScript = "token_file=$SRCROOT/mapbox_access_token\ntoken=\"$(cat $token_file)\"\nif [ \"$token\" ]; then\nplutil -replace MGLMapboxAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nelse\necho 'error: Missing Mapbox access token'\nopen 'https://www.mapbox.com/studio/account/tokens/'\necho \"error: Get an access token from <https://www.mapbox.com/studio/account/tokens/>, then create a new file at $token_file that contains the access token.\"\nexit 1\nfi\n";
 		};
 		6D08BB8D5F10B7C52BE04856 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -363,18 +363,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-send-a-map/Pods-send-a-map-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-send-a-map/Pods-send-a-map-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MapboxStatic.swift/MapboxStatic.framework",
+				"${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxStatic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polyline.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-send-a-map/Pods-send-a-map-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-send-a-map/Pods-send-a-map-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C57A7D117990401130A8C740 /* [CP] Check Pods Manifest.lock */ = {
@@ -599,8 +603,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nbsa.send-a-map";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mapbox.send-a-map";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -617,8 +622,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nbsa.send-a-map";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mapbox.send-a-map";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

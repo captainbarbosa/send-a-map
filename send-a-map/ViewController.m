@@ -3,6 +3,8 @@
 #import "ViewController.h"
 #import <Mapbox/Mapbox.h>
 
+@import MapboxStatic;
+
 @interface ViewController () <MGLMapViewDelegate>
 
 @property (strong, nonatomic) MGLMapView *mapView;
