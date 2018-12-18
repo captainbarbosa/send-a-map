@@ -80,12 +80,13 @@
     options.zoomLevel = self.mapView.zoomLevel;
     options.coordinateBounds = self.mapView.visibleCoordinateBounds;
     
+    MBSnapshotCamera *snapshotCamera = [MBSnapshotCamera cameraLookingAtCenterCoordinate:self.mapView.centerCoordinate zoomLevel:self.mapView.zoomLevel];
     
-    self.snapshotter = [[MGLMapSnapshotter alloc] initWithOptions:options];
+    MBSnapshotOptions *snapshotOptions = [[MBSnapshotOptions alloc] initWithStyleURL:self.mapView.styleURL camera:snapshotCamera size:self.mapView.frame.size];
     
-    // Start the snapshot process
-    [self.snapshotter startWithCompletionHandler:^(MGLMapSnapshot * _Nullable snapshot, NSError * _Nullable error) {
-        // If an error occurs, display an alert
+    MBSnapshot *snapshot = [[MBSnapshot alloc] initWithOptions:snapshotOptions];
+    
+    [snapshot imageWithCompletionHandler:^(UIImage * _Nullable image, NSError * _Nullable error) {
         if (error != nil) {
             UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Error"
                                                                                 message:@"Could not generate image"
@@ -94,14 +95,14 @@
             [errorAlert addAction:defaultAction];
             [self presentViewController:errorAlert animated:YES completion:nil];
         }
-        
+       
         // Re-enable the snapshot button if successful
         UIApplication.sharedApplication.networkActivityIndicatorVisible = NO;
         
         // Stop the loading indicator
         button.enabled = YES;
         
-        [self snapshotterDidCompleteWithImage:snapshot.image];
+        [self snapshotterDidCompleteWithImage:image];
     }];
 }
 
