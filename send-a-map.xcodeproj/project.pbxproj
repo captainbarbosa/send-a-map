@@ -13,29 +13,19 @@
 		079F420120E43727007EEB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079F420020E43727007EEB5E /* Assets.xcassets */; };
 		079F420420E43727007EEB5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079F420220E43727007EEB5E /* LaunchScreen.storyboard */; };
 		079F420720E43727007EEB5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F420620E43727007EEB5E /* main.m */; };
-		079F421120E43727007EEB5E /* location_shareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421020E43727007EEB5E /* location_shareTests.m */; };
-		079F421C20E43727007EEB5E /* location_shareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421B20E43727007EEB5E /* location_shareUITests.m */; };
-		1C427A5A72E70C368E8FD131 /* libPods-location-shareUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B29B335E2AB1BB6252CAF31D /* libPods-location-shareUITests.a */; };
+		07AB219B21C99FB600C2C5C4 /* send_a_map_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB219A21C99FB600C2C5C4 /* send_a_map_Tests.m */; };
+		07BC82E421CB1BE90068887F /* CustomDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BC82E321CB1BE90068887F /* CustomDrawingView.m */; };
+		213EDEE0664F32DB44511C48 /* Pods_send_a_map_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29918FBEBD69AC5B29966D58 /* Pods_send_a_map_Tests.framework */; };
 		282D9CC2FE42C419903A30EB /* Pods_send_a_map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCA21398E6B5CF15B88B674 /* Pods_send_a_map.framework */; };
-		877C3A35D61E7C4393AC4378 /* Pods_send_a_mapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC73F895B1DA5E9756DF7304 /* Pods_send_a_mapTests.framework */; };
-		C9539D9545B942AC45CDE31B /* libPods-location-shareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCC4FD241816227A4C28F30 /* libPods-location-shareTests.a */; };
-		E65079F648C3435AA9222D8F /* Pods_send_a_mapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF2FEFC4301D8A4CEF7D2F /* Pods_send_a_mapUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		079F420D20E43727007EEB5E /* PBXContainerItemProxy */ = {
+		07AB219D21C99FB600C2C5C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 079F41EC20E43725007EEB5E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 079F41F320E43725007EEB5E;
-			remoteInfo = "location-share";
-		};
-		079F421820E43727007EEB5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 079F41EC20E43725007EEB5E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 079F41F320E43725007EEB5E;
-			remoteInfo = "location-share";
+			remoteInfo = "send-a-map";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,17 +41,17 @@
 		079F420320E43727007EEB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		079F420520E43727007EEB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079F420620E43727007EEB5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		079F420C20E43727007EEB5E /* send-a-mapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "send-a-mapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		079F421020E43727007EEB5E /* location_shareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = location_shareTests.m; sourceTree = "<group>"; };
-		079F421220E43727007EEB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		079F421720E43727007EEB5E /* send-a-mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "send-a-mapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		079F421B20E43727007EEB5E /* location_shareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = location_shareUITests.m; sourceTree = "<group>"; };
-		079F421D20E43727007EEB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AB219821C99FB600C2C5C4 /* send-a-map-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "send-a-map-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AB219A21C99FB600C2C5C4 /* send_a_map_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = send_a_map_Tests.m; sourceTree = "<group>"; };
+		07AB219C21C99FB600C2C5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07BC82E221CB1BE90068887F /* CustomDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomDrawingView.h; sourceTree = "<group>"; };
+		07BC82E321CB1BE90068887F /* CustomDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomDrawingView.m; sourceTree = "<group>"; };
 		0B0D6B517D990EDA50576B97 /* libPods-location-share.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-location-share.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCC4FD241816227A4C28F30 /* libPods-location-shareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-location-shareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29918FBEBD69AC5B29966D58 /* Pods_send_a_map_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_send_a_map_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		496C0B37F3806A9494033B20 /* Pods-location-shareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-shareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-location-shareTests/Pods-location-shareTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5D691BF5965EA1A19F77A971 /* Pods-send-a-mapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-mapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-mapTests/Pods-send-a-mapTests.release.xcconfig"; sourceTree = "<group>"; };
 		5EEE4F442E587E7A8AE969C9 /* Pods-location-shareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-shareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-location-shareUITests/Pods-location-shareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		66A5D696BB0773C2B72026DF /* Pods-send-a-map-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-map-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-map-Tests/Pods-send-a-map-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		66F5B2A9DF6F061B7FBFF67A /* Pods-send-a-map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-map.release.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-map/Pods-send-a-map.release.xcconfig"; sourceTree = "<group>"; };
 		6A0F1F9C086A9FD359606057 /* Pods-send-a-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-map/Pods-send-a-map.debug.xcconfig"; sourceTree = "<group>"; };
 		7108809F742A16BED2E170F8 /* Pods-location-shareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-shareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-location-shareUITests/Pods-location-shareUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,8 +62,8 @@
 		AEAF2FEFC4301D8A4CEF7D2F /* Pods_send_a_mapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_send_a_mapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29B335E2AB1BB6252CAF31D /* libPods-location-shareUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-location-shareUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC73F895B1DA5E9756DF7304 /* Pods_send_a_mapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_send_a_mapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D28E1541370DA4481AC07B5E /* Pods-send-a-mapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-mapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-mapTests/Pods-send-a-mapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB77037BA5372FCA3F162F15 /* Pods-location-shareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-shareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-location-shareTests/Pods-location-shareTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC9B5BFF72070E3901AD3AB7 /* Pods-send-a-map-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-send-a-map-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-send-a-map-Tests/Pods-send-a-map-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,21 +75,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		079F420920E43727007EEB5E /* Frameworks */ = {
+		07AB219521C99FB600C2C5C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9539D9545B942AC45CDE31B /* libPods-location-shareTests.a in Frameworks */,
-				877C3A35D61E7C4393AC4378 /* Pods_send_a_mapTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		079F421420E43727007EEB5E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C427A5A72E70C368E8FD131 /* libPods-location-shareUITests.a in Frameworks */,
-				E65079F648C3435AA9222D8F /* Pods_send_a_mapUITests.framework in Frameworks */,
+				213EDEE0664F32DB44511C48 /* Pods_send_a_map_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				079F41F620E43725007EEB5E /* send-a-map */,
-				079F420F20E43727007EEB5E /* send-a-mapTests */,
-				079F421A20E43727007EEB5E /* send-a-mapUITests */,
+				07AB219921C99FB600C2C5C4 /* send-a-map-Tests */,
 				079F41F520E43725007EEB5E /* Products */,
 				B9B05FCFDDD63C7E235A6951 /* Pods */,
 				6C8610D315DBE4AAAF02CF42 /* Frameworks */,
@@ -122,8 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				079F41F420E43725007EEB5E /* send-a-map.app */,
-				079F420C20E43727007EEB5E /* send-a-mapTests.xctest */,
-				079F421720E43727007EEB5E /* send-a-mapUITests.xctest */,
+				07AB219821C99FB600C2C5C4 /* send-a-map-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,26 +118,19 @@
 				079F420220E43727007EEB5E /* LaunchScreen.storyboard */,
 				079F420520E43727007EEB5E /* Info.plist */,
 				079F420620E43727007EEB5E /* main.m */,
+				07BC82E221CB1BE90068887F /* CustomDrawingView.h */,
+				07BC82E321CB1BE90068887F /* CustomDrawingView.m */,
 			);
 			path = "send-a-map";
 			sourceTree = "<group>";
 		};
-		079F420F20E43727007EEB5E /* send-a-mapTests */ = {
+		07AB219921C99FB600C2C5C4 /* send-a-map-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				079F421020E43727007EEB5E /* location_shareTests.m */,
-				079F421220E43727007EEB5E /* Info.plist */,
+				07AB219A21C99FB600C2C5C4 /* send_a_map_Tests.m */,
+				07AB219C21C99FB600C2C5C4 /* Info.plist */,
 			);
-			path = "send-a-mapTests";
-			sourceTree = "<group>";
-		};
-		079F421A20E43727007EEB5E /* send-a-mapUITests */ = {
-			isa = PBXGroup;
-			children = (
-				079F421B20E43727007EEB5E /* location_shareUITests.m */,
-				079F421D20E43727007EEB5E /* Info.plist */,
-			);
-			path = "send-a-mapUITests";
+			path = "send-a-map-Tests";
 			sourceTree = "<group>";
 		};
 		6C8610D315DBE4AAAF02CF42 /* Frameworks */ = {
@@ -171,6 +142,7 @@
 				7BCA21398E6B5CF15B88B674 /* Pods_send_a_map.framework */,
 				BC73F895B1DA5E9756DF7304 /* Pods_send_a_mapTests.framework */,
 				AEAF2FEFC4301D8A4CEF7D2F /* Pods_send_a_mapUITests.framework */,
+				29918FBEBD69AC5B29966D58 /* Pods_send_a_map_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,10 +158,10 @@
 				5EEE4F442E587E7A8AE969C9 /* Pods-location-shareUITests.release.xcconfig */,
 				6A0F1F9C086A9FD359606057 /* Pods-send-a-map.debug.xcconfig */,
 				66F5B2A9DF6F061B7FBFF67A /* Pods-send-a-map.release.xcconfig */,
-				D28E1541370DA4481AC07B5E /* Pods-send-a-mapTests.debug.xcconfig */,
-				5D691BF5965EA1A19F77A971 /* Pods-send-a-mapTests.release.xcconfig */,
 				9C4F053421E369FCFECDC3A7 /* Pods-send-a-mapUITests.debug.xcconfig */,
 				023509C97E833B9202AFAD60 /* Pods-send-a-mapUITests.release.xcconfig */,
+				DC9B5BFF72070E3901AD3AB7 /* Pods-send-a-map-Tests.debug.xcconfig */,
+				66A5D696BB0773C2B72026DF /* Pods-send-a-map-Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -217,43 +189,25 @@
 			productReference = 079F41F420E43725007EEB5E /* send-a-map.app */;
 			productType = "com.apple.product-type.application";
 		};
-		079F420B20E43727007EEB5E /* send-a-mapTests */ = {
+		07AB219721C99FB600C2C5C4 /* send-a-map-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 079F422320E43727007EEB5E /* Build configuration list for PBXNativeTarget "send-a-mapTests" */;
+			buildConfigurationList = 07AB219F21C99FB600C2C5C4 /* Build configuration list for PBXNativeTarget "send-a-map-Tests" */;
 			buildPhases = (
-				C57A7D117990401130A8C740 /* [CP] Check Pods Manifest.lock */,
-				079F420820E43727007EEB5E /* Sources */,
-				079F420920E43727007EEB5E /* Frameworks */,
-				079F420A20E43727007EEB5E /* Resources */,
+				FB39E1887FD42C7082C983FE /* [CP] Check Pods Manifest.lock */,
+				07AB219421C99FB600C2C5C4 /* Sources */,
+				07AB219521C99FB600C2C5C4 /* Frameworks */,
+				07AB219621C99FB600C2C5C4 /* Resources */,
+				DAC55A79DBDE7AA3B99AE326 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				079F420E20E43727007EEB5E /* PBXTargetDependency */,
+				07AB219E21C99FB600C2C5C4 /* PBXTargetDependency */,
 			);
-			name = "send-a-mapTests";
-			productName = "location-shareTests";
-			productReference = 079F420C20E43727007EEB5E /* send-a-mapTests.xctest */;
+			name = "send-a-map-Tests";
+			productName = "send-a-map-Tests";
+			productReference = 07AB219821C99FB600C2C5C4 /* send-a-map-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		079F421620E43727007EEB5E /* send-a-mapUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 079F422620E43727007EEB5E /* Build configuration list for PBXNativeTarget "send-a-mapUITests" */;
-			buildPhases = (
-				D595B241CB8F6D635D4BDD33 /* [CP] Check Pods Manifest.lock */,
-				079F421320E43727007EEB5E /* Sources */,
-				079F421420E43727007EEB5E /* Frameworks */,
-				079F421520E43727007EEB5E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				079F421920E43727007EEB5E /* PBXTargetDependency */,
-			);
-			name = "send-a-mapUITests";
-			productName = "location-shareUITests";
-			productReference = 079F421720E43727007EEB5E /* send-a-mapUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -261,18 +215,15 @@
 		079F41EC20E43725007EEB5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Nadia Barbosa";
 				TargetAttributes = {
 					079F41F320E43725007EEB5E = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					079F420B20E43727007EEB5E = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 079F41F320E43725007EEB5E;
-					};
-					079F421620E43727007EEB5E = {
-						CreatedOnToolsVersion = 9.4.1;
+					07AB219721C99FB600C2C5C4 = {
+						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 079F41F320E43725007EEB5E;
 					};
 				};
@@ -291,8 +242,7 @@
 			projectRoot = "";
 			targets = (
 				079F41F320E43725007EEB5E /* send-a-map */,
-				079F420B20E43727007EEB5E /* send-a-mapTests */,
-				079F421620E43727007EEB5E /* send-a-mapUITests */,
+				07AB219721C99FB600C2C5C4 /* send-a-map-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,14 +258,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		079F420A20E43727007EEB5E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		079F421520E43727007EEB5E /* Resources */ = {
+		07AB219621C99FB600C2C5C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,6 +274,7 @@
 			files = (
 			);
 			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
 			);
 			name = "Add Mapbox access token";
 			outputPaths = (
@@ -381,36 +325,50 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-send-a-map/Pods-send-a-map-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C57A7D117990401130A8C740 /* [CP] Check Pods Manifest.lock */ = {
+		DAC55A79DBDE7AA3B99AE326 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-send-a-map-Tests/Pods-send-a-map-Tests-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MapboxStatic.swift/MapboxStatic.framework",
+				"${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-send-a-mapTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxStatic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polyline.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-send-a-map-Tests/Pods-send-a-map-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D595B241CB8F6D635D4BDD33 /* [CP] Check Pods Manifest.lock */ = {
+		FB39E1887FD42C7082C983FE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-send-a-mapUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-send-a-map-Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,40 +382,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BC82E421CB1BE90068887F /* CustomDrawingView.m in Sources */,
 				079F41FC20E43725007EEB5E /* ViewController.m in Sources */,
 				079F420720E43727007EEB5E /* main.m in Sources */,
 				079F41F920E43725007EEB5E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		079F420820E43727007EEB5E /* Sources */ = {
+		07AB219421C99FB600C2C5C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				079F421120E43727007EEB5E /* location_shareTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		079F421320E43727007EEB5E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				079F421C20E43727007EEB5E /* location_shareUITests.m in Sources */,
+				07AB219B21C99FB600C2C5C4 /* send_a_map_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		079F420E20E43727007EEB5E /* PBXTargetDependency */ = {
+		07AB219E21C99FB600C2C5C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 079F41F320E43725007EEB5E /* send-a-map */;
-			targetProxy = 079F420D20E43727007EEB5E /* PBXContainerItemProxy */;
-		};
-		079F421920E43727007EEB5E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 079F41F320E43725007EEB5E /* send-a-map */;
-			targetProxy = 079F421820E43727007EEB5E /* PBXContainerItemProxy */;
+			targetProxy = 07AB219D21C99FB600C2C5C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -629,77 +575,48 @@
 			};
 			name = Release;
 		};
-		079F422420E43727007EEB5E /* Debug */ = {
+		07AB21A021C99FB600C2C5C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D28E1541370DA4481AC07B5E /* Pods-send-a-mapTests.debug.xcconfig */;
+			baseConfigurationReference = DC9B5BFF72070E3901AD3AB7 /* Pods-send-a-map-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "location-shareTests/Info.plist";
+				DEVELOPMENT_TEAM = GJZR2MEM28;
+				INFOPLIST_FILE = "send-a-map-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nbsa.location-share.location-shareTests";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nbsa.send-a-map-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/send-a-map.app/send-a-map";
 			};
 			name = Debug;
 		};
-		079F422520E43727007EEB5E /* Release */ = {
+		07AB21A121C99FB600C2C5C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D691BF5965EA1A19F77A971 /* Pods-send-a-mapTests.release.xcconfig */;
+			baseConfigurationReference = 66A5D696BB0773C2B72026DF /* Pods-send-a-map-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "location-shareTests/Info.plist";
+				DEVELOPMENT_TEAM = GJZR2MEM28;
+				INFOPLIST_FILE = "send-a-map-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nbsa.location-share.location-shareTests";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nbsa.send-a-map-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/send-a-map.app/send-a-map";
-			};
-			name = Release;
-		};
-		079F422720E43727007EEB5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C4F053421E369FCFECDC3A7 /* Pods-send-a-mapUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "location-shareUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nbsa.location-share.location-shareUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "location-share";
-			};
-			name = Debug;
-		};
-		079F422820E43727007EEB5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 023509C97E833B9202AFAD60 /* Pods-send-a-mapUITests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "location-shareUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nbsa.location-share.location-shareUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "location-share";
 			};
 			name = Release;
 		};
@@ -724,20 +641,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		079F422320E43727007EEB5E /* Build configuration list for PBXNativeTarget "send-a-mapTests" */ = {
+		07AB219F21C99FB600C2C5C4 /* Build configuration list for PBXNativeTarget "send-a-map-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				079F422420E43727007EEB5E /* Debug */,
-				079F422520E43727007EEB5E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		079F422620E43727007EEB5E /* Build configuration list for PBXNativeTarget "send-a-mapUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				079F422720E43727007EEB5E /* Debug */,
-				079F422820E43727007EEB5E /* Release */,
+				07AB21A021C99FB600C2C5C4 /* Debug */,
+				07AB21A121C99FB600C2C5C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

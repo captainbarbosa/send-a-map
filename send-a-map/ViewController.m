@@ -2,10 +2,11 @@
 
 #import "ViewController.h"
 #import <Mapbox/Mapbox.h>
+#import "CustomDrawingView.h"
 
 @import MapboxStatic;
 
-@interface ViewController () <MGLMapViewDelegate>
+@interface ViewController () <MGLMapViewDelegate, UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) MGLMapView *mapView;
 @property (strong, nonatomic) MGLMapSnapshotter *snapshotter;
@@ -27,16 +28,9 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(didTapButton:)];
 }
 
-
--(void)mapViewDidFinishLoadingMap:(MGLMapView *)mapView {
-    
-}
-
 - (void)configureMapView {
     // create a map view
     self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleURL:MGLStyle.streetsStyleURL];
-    
-    //TODO: set ourselves up to be the mapView's delegate; don't enable snapshot button until style finished loading
     
     // constrain it to the edges
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -45,14 +39,26 @@
     [self.view addSubview:self.mapView];
     self.mapView.delegate = self;
     
-    //    UIView *greyMask = [[UIView alloc] initWithFrame:self.view.bounds];
-    //    greyMask.backgroundColor  =[UIColor colorWithRed:0.961 green:0.957 blue:0.961 alpha:0.4];
-    //    [self.view addSubview:greyMask];
-    
-    //    UIView *overlayView = [[UIView alloc] initWithFrame:CGRectMake(self.mapView.center.x - 150, self.mapView.center.y - 150, 300, 300)];
-    //
-    //    overlayView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.4];
-    //    self.mapView.maskView = overlayView;
+    UIButton *toggleDrawingButton = [[UIButton alloc] initWithFrame:CGRectMake(40, 120, 140, 60)];
+    [toggleDrawingButton setTitle:@"Enable drawing" forState:UIControlStateNormal];
+    toggleDrawingButton.backgroundColor = UIColor.greenColor;
+    [toggleDrawingButton addTarget:self action:@selector(toggleDrawing:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:toggleDrawingButton];
+}
+
+-(void)toggleDrawing:(UIButton *)sender {
+    // If user interaction is disabled, enable it
+    if (self.mapView.userInteractionEnabled == NO) {
+        self.mapView.userInteractionEnabled = YES;
+        NSLog(@"❌ user interaction enabled");
+    } else {
+        // Otherwise, disable it
+        self.mapView.userInteractionEnabled = NO;
+        NSLog(@"✅ user interaction disabled");
+        
+        CustomDrawingView *drawingView = [[CustomDrawingView alloc] initWithFrame:CGRectMake(200, 200, 30, 30)];
+        [self.mapView addSubview:drawingView];
+    }
 }
 
 -(void)toggleUserLocation:(UIBarButtonItem *)button {
@@ -95,7 +101,7 @@
             [errorAlert addAction:defaultAction];
             [self presentViewController:errorAlert animated:YES completion:nil];
         }
-       
+
         // Re-enable the snapshot button if successful
         UIApplication.sharedApplication.networkActivityIndicatorVisible = NO;
         
