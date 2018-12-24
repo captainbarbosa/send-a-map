@@ -56,8 +56,9 @@
         self.mapView.userInteractionEnabled = NO;
         NSLog(@"✅ user interaction disabled");
         
-        CustomDrawingView *drawingView = [[CustomDrawingView alloc] initWithFrame:CGRectMake(200, 200, 30, 30)];
-        [self.mapView addSubview:drawingView];
+        CustomDrawingView *drawingView = [[CustomDrawingView alloc] initWithFrame:self.mapView.frame];
+        
+        [self.view addSubview:drawingView];
     }
 }
 

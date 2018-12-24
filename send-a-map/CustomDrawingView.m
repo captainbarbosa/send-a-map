@@ -9,13 +9,49 @@
 #import "CustomDrawingView.h"
 
 @implementation CustomDrawingView
-
--(void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:rect];
-    [UIColor.greenColor setFill];
-    [path fill];
+{
+    UIBezierPath *path;
 }
 
+-(id)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame])
+    {
+        [self setMultipleTouchEnabled:NO];
+        [self setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:0.5]];
+        path = [UIBezierPath bezierPath];
+        [path setLineWidth:2.0];
+    }
+    return self;
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    [[UIColor blackColor] setStroke];
+    [path stroke];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self];
+    [path moveToPoint:point];
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self];
+    [path addLineToPoint:point];
+    [self setNeedsDisplay];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self touchesMoved:touches withEvent:event];
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self touchesEnded:touches withEvent:event];
+}
 @end
