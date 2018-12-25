@@ -48,6 +48,10 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self touchesMoved:touches withEvent:event];
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didFinishDrawing)]) {
+        [self.delegate didFinishDrawing];
+    }
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event

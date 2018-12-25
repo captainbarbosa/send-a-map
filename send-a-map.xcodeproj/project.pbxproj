@@ -113,13 +113,13 @@
 				079F41F820E43725007EEB5E /* AppDelegate.m */,
 				079F41FA20E43725007EEB5E /* ViewController.h */,
 				079F41FB20E43725007EEB5E /* ViewController.m */,
+				07BC82E221CB1BE90068887F /* CustomDrawingView.h */,
+				07BC82E321CB1BE90068887F /* CustomDrawingView.m */,
 				079F41FD20E43725007EEB5E /* Main.storyboard */,
 				079F420020E43727007EEB5E /* Assets.xcassets */,
 				079F420220E43727007EEB5E /* LaunchScreen.storyboard */,
 				079F420520E43727007EEB5E /* Info.plist */,
 				079F420620E43727007EEB5E /* main.m */,
-				07BC82E221CB1BE90068887F /* CustomDrawingView.h */,
-				07BC82E321CB1BE90068887F /* CustomDrawingView.m */,
 			);
 			path = "send-a-map";
 			sourceTree = "<group>";

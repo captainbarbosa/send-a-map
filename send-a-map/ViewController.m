@@ -6,7 +6,7 @@
 
 @import MapboxStatic;
 
-@interface ViewController () <MGLMapViewDelegate, UIGestureRecognizerDelegate>
+@interface ViewController () <MGLMapViewDelegate, UIGestureRecognizerDelegate, CustomDrawingViewDelegate>
 
 @property (strong, nonatomic) MGLMapView *mapView;
 @property (strong, nonatomic) MGLMapSnapshotter *snapshotter;
@@ -57,7 +57,7 @@
         NSLog(@"✅ user interaction disabled");
         
         CustomDrawingView *drawingView = [[CustomDrawingView alloc] initWithFrame:self.mapView.frame];
-        
+        drawingView.delegate = self;
         [self.view addSubview:drawingView];
     }
 }
@@ -121,6 +121,10 @@
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[image] applicationActivities:nil];
     activityViewController.popoverPresentationController.sourceView = self.view;
     [self presentViewController:activityViewController animated:true completion:nil];
+}
+
+-(void)didFinishDrawing{
+    NSLog(@"Finished drawing");
 }
 
 @end

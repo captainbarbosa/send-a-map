@@ -13,6 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomDrawingView : UIView
 
+@property (nonatomic, weak) id delegate;
+
+@end
+
+@protocol CustomDrawingViewDelegate
+@required
+-(void)didFinishDrawing;
+
 @end
 
 NS_ASSUME_NONNULL_END
